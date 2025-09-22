@@ -1,3 +1,34 @@
+# はじめに
+
+React Routerで遊ぶ用に作成しました
+
+特にアプリとしての価値はありません
+
+## フォルダ構成
+
+```
+/ (プロジェクトルート)
+├── app/                # アプリケーションの主要コード
+│   ├── components/     # Reactコンポーネント
+│   ├── routes/         # ルーティング関連ファイル
+│   └── styles/         # スタイルシート
+├── public/             # 公開用静的ファイル
+├── build/              # ビルド成果物
+├── node_modules/       # 依存パッケージ
+├── package.json        # プロジェクト設定
+└── README.md           # このファイル
+
+routesについて
+├── _index.tsx          # ホーム
+├── children.tsx        # 子ページ
+├── children.test2.tsx  # 子ページ内に表示する要素（ネストルート）
+├── test1.tsx           # ページ1
+```
+
+---
+
+以下、元README.mdより
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
