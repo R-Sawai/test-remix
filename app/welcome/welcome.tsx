@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
@@ -40,6 +41,26 @@ export function Welcome() {
               ))}
             </ul>
           </nav>
+        </div>
+        <div className="max-w-[300px] w-full space-y-2 flex flex-col px-4 text-center rounded-3xl border border-gray-200">
+          <Link
+            to="/children"
+            className="text-blue-700 hover:underline dark:text-blue-500"
+          >
+            Go to Children
+          </Link>
+          <Link
+            to="/test1"
+            className="text-blue-700 hover:underline dark:text-blue-500"
+          >
+            Go to Test1
+          </Link>
+          <Link
+            to="/children/test2"
+            className="text-blue-700 hover:underline dark:text-blue-500"
+          >
+            Go to Test2
+          </Link>
         </div>
       </div>
     </main>
