@@ -1,3 +1,5 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+import { type RouteConfig, route } from "@react-router/dev/routes";
+import { flatRoutes } from "@react-router/fs-routes";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+// flatRoutesでルートを自動生成する
+export default [...(await flatRoutes())] satisfies RouteConfig;
